@@ -1,0 +1,42 @@
+name: Profile Review
+description: Share your experience with Jagdeep Singh or a project.
+title: "Review: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+      description: The name you want displayed on the portfolio.
+      placeholder: "Your name"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: rating
+    attributes:
+      label: Rating
+      options:
+        - "5 - Excellent"
+        - "4 - Very Good"
+        - "3 - Good"
+        - "2 - Fair"
+        - "1 - Needs Improvement"
+    validations:
+      required: true
+
+  - type: textarea
+    id: review
+    attributes:
+      label: Your review
+      description: Tell others about your experience, collaboration or project.
+      placeholder: "Write your review..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Permission
+      options:
+        - label: "I allow Jagdeep Singh to publish this review on the portfolio after approval."
+          required: true
